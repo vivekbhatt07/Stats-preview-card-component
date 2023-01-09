@@ -17,5 +17,158 @@
 }
 
 body {
-  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  font-family: var(--secondary-font);
+  font-weight: var(--regular-weight);
+  background: hsl(233, 47%, 7%);
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+span {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1rem;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap::before {
+  content: "";
+  background-color: hsl(277, 64%, 61%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: hsl(244, 38%, 16%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img {
+  display: block;
+  max-width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em 1.5em;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card-text h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: var(--bold-weight);
+}
+
+.card-text p {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: var(--regular-weight);
+}
+
+.card-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.card-item h2 {
+  text-transform: uppercase;
+}
+
+.card-item span {
+  text-transform: uppercase;
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    width: 90%;
+    max-width: unset;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .img-wrap,
+  .card-body {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .card-text h1 {
+    text-align: left;
+  }
+
+  .card-text p {
+    text-align: left;
+  }
+
+  .img-wrap {
+    order: 2;
+  }
+
+  .card-body {
+    gap: 3em;
+    padding: 4em 6em 4em 3em;
+  }
+
+  .card-items {
+    flex-direction: row;
+  }
 }
