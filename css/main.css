@@ -101,16 +101,18 @@ span {
 }
 
 .card-text h1 {
-  text-transform: capitalize;
   text-align: center;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-weight: var(--bold-weight);
+  font-size: 2.5rem;
 }
 
 .card-text p {
   text-align: center;
   font-family: var(--primary-font);
   font-weight: var(--regular-weight);
+  font-size: 0.9375rem;
+  line-height: 150%;
 }
 
 .card-items {
@@ -123,16 +125,18 @@ span {
 .card-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5em;
 }
 
 .card-item h2 {
-  text-transform: uppercase;
+  font-size: 1.875rem;
 }
 
 .card-item span {
+  font-family: var(--secondary-font);
   text-transform: uppercase;
+  font-size: 0.9375rem;
 }
 
 @media (min-width: 1280px) {
@@ -165,10 +169,15 @@ span {
 
   .card-body {
     gap: 3em;
-    padding: 4em 6em 4em 3em;
+    padding: 4em 6em 4em 4em;
   }
 
   .card-items {
     flex-direction: row;
+    gap: 3em;
+  }
+
+  .card-item {
+    align-items: flex-start;
   }
 }
