@@ -36,6 +36,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+h2 {
+  font-family: var(--primary-font);
+}
+
 h1,
 h2 {
   color: hsl(0, 0%, 100%);
@@ -47,7 +51,6 @@ p {
 
 span {
   color: hsla(0, 0%, 100%, 0.6);
-  font-size: 1rem;
 }
 
 .wrapper {
@@ -67,7 +70,7 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 .wrapper {
@@ -85,6 +88,8 @@ span {
 .card-img {
   display: block;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-body {
@@ -104,7 +109,11 @@ span {
   text-align: center;
   font-family: var(--primary-font);
   font-weight: var(--bold-weight);
-  font-size: 2.5rem;
+  font-size: 1.75rem;
+}
+
+.card-head span {
+  color: hsl(277, 64%, 61%);
 }
 
 .card-text p {
@@ -119,7 +128,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .card-item {
@@ -130,18 +139,18 @@ span {
 }
 
 .card-item h2 {
-  font-size: 1.875rem;
+  font-size: 1.40625;
 }
 
 .card-item span {
   font-family: var(--secondary-font);
   text-transform: uppercase;
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
 }
 
 @media (min-width: 1280px) {
   .wrapper {
-    width: 90%;
+    width: 80%;
     max-width: unset;
   }
 
@@ -157,10 +166,13 @@ span {
 
   .card-text h1 {
     text-align: left;
+    font-size: 2.5rem;
   }
 
   .card-text p {
     text-align: left;
+    font-size: 0.9375rem;
+    line-height: 150%;
   }
 
   .img-wrap {
@@ -174,10 +186,18 @@ span {
 
   .card-items {
     flex-direction: row;
-    gap: 3em;
+    gap: 4.5em;
   }
 
   .card-item {
     align-items: flex-start;
+  }
+
+  .card-item h2 {
+    font-size: 1.875rem;
+  }
+
+  .card-item span {
+    font-size: 0.9375rem;
   }
 }
