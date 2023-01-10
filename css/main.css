@@ -65,16 +65,19 @@ span {
 .img-wrap::before {
   content: "";
   background-color: hsl(277, 64%, 61%);
+  background-image: url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.65;
+  background-blend-mode: luminosity;
 }
 
 .wrapper {
-  margin: auto;
+  margin: 60px auto;
 }
 
 .card {
@@ -152,6 +155,7 @@ span {
   .wrapper {
     width: 80%;
     max-width: unset;
+    margin: auto;
   }
 
   .card {
@@ -181,7 +185,7 @@ span {
 
   .card-body {
     gap: 3em;
-    padding: 4em 6em 4em 4em;
+    padding: 4em 6em 3.5em 4em;
   }
 
   .card-items {
