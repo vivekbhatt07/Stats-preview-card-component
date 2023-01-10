@@ -13,8 +13,8 @@
 
 ### Links
 
-- Solution URL: (https://github.com/vivekbhatt07/Testimonial-Grid-Section)
-- Live Site URL: (https://grids-testimonial.netlify.app/)
+- Solution URL: (https://github.com/vivekbhatt07/Stats-preview-card-component)
+- Live Site URL: (https://stats-card-view.netlify.app/)
 
 ### Built with
 
